@@ -1,0 +1,151 @@
+.app {
+  min-height: 100vh;
+  padding: var(--margin);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter);
+}
+
+.main-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--gutter);
+}
+
+.left-panel {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter);
+}
+
+.right-panel {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter);
+}
+
+/* Dashboard Modules */
+.module {
+  padding: var(--container-padding, 20px);
+  position: relative;
+  overflow: hidden;
+}
+
+.module-header {
+  border-bottom: 1px solid var(--outline-variant);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.module-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-container);
+  text-shadow: 0 0 5px var(--primary-container);
+}
+
+/* Terminal Input */
+.terminal-input-container {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--outline-variant);
+  padding: 12px;
+  position: relative;
+}
+
+.terminal-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--primary-container);
+  font-family: var(--font-main);
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  min-height: 100px;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: var(--primary-container);
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Buttons */
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--primary-container);
+  color: var(--primary-container);
+  padding: 8px 24px;
+  font-family: var(--font-main);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ghost:hover {
+  background: rgba(0, 255, 65, 0.1);
+  box-shadow: 0 0 15px var(--primary-container);
+  animation: flicker 0.15s infinite;
+}
+
+.btn-ghost:active {
+  transform: scale(0.98);
+}
+
+/* Risk Score Overlay */
+.risk-high {
+  border-color: var(--secondary) !important;
+  box-shadow: inset 0 0 20px rgba(255, 49, 49, 0.2);
+}
+
+.risk-high .module-title {
+  color: var(--secondary);
+  text-shadow: 0 0 5px var(--secondary);
+}
+
+/* Status Chips */
+.status-chip {
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  border: 1px solid currentColor;
+}
+
+.pulse {
+  animation: pulse-red 2s infinite;
+}
+
+/* Reasoning List */
+.reasoning-list {
+  list-style: none;
+  font-size: 13px;
+}
+
+.reasoning-item {
+  padding: 8px;
+  border-left: 2px solid var(--primary-container);
+  margin-bottom: 8px;
+  background: rgba(0, 255, 65, 0.05);
+}
+
+.reasoning-item.danger {
+  border-left-color: var(--secondary);
+  background: rgba(255, 49, 49, 0.05);
+}
