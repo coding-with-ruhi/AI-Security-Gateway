@@ -17,9 +17,10 @@ When developers connect AI models to databases, APIs, and client-facing apps, th
 4. **AI Hallucinations**: Runs structural audits on AI-generated text to verify its logical consistency and source attribution.
 
 ---
-<img width="1900" height="977" alt="Screenshot 2026-05-26 222401" src="https://github.com/user-attachments/assets/6c95e476-94cc-43cb-adeb-6b8d6f497b07" />
-<img width="1884" height="1027" alt="Screenshot 2026-05-26 222333" src="https://github.com/user-attachments/assets/dbc57814-b0c0-4f20-9a0f-1ef4f920f058" />
 <img width="1893" height="1022" alt="Screenshot 2026-05-26 222238" src="https://github.com/user-attachments/assets/295258fa-0b32-4af6-b63f-cdfcff258db5" />
+---
+<img width="1884" height="1027" alt="Screenshot 2026-05-26 222333" src="https://github.com/user-attachments/assets/dbc57814-b0c0-4f20-9a0f-1ef4f920f058" />
+---
 <img width="1897" height="913" alt="Screenshot 2026-05-26 222132" src="https://github.com/user-attachments/assets/d43dc9bb-2810-4159-89ff-0b4d6da5b43b" />
 
 ---
