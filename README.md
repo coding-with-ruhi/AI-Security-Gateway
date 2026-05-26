@@ -27,7 +27,7 @@ When developers connect AI models to databases, APIs, and client-facing apps, th
 
 ## Key Features 
 
- ** Hack Detection**: Catches direct hacks (explicit commands) and indirect hacks (hidden in text).
+  Hack Detection: Catches direct hacks (explicit commands) and indirect hacks (hidden in text).
  ** Risk Scoring**: Scores every prompt from `0` (totally safe) to `10` (danger level red).
  ** Automated Cleaning**: Strips out bad sentences and replaces them with safety placeholders.
  ** Threat Radar**: A beautiful dark-mode SOC dashboard to see security traces in real-time.
