@@ -61,8 +61,9 @@ if (process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-')) 
 }
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`
 ╔═══════════════════════════════════════════════════════════════╗
 ║        AI SECURITY GATEWAY - PROMPT INJECTION DEFENSE         ║
 ╠═══════════════════════════════════════════════════════════════╣
@@ -78,7 +79,8 @@ app.listen(PORT, () => {
 ║  GET  /api/history        - Last 10 interactions             ║
 ║  GET  /api/status         - System status                    ║
 ╚═══════════════════════════════════════════════════════════════╝
-  `);
-});
+    `);
+  });
+}
 
 export default app;
