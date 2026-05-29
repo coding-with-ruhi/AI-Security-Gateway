@@ -25,13 +25,20 @@ When developers connect AI models to databases, APIs, and client-facing apps, th
 | ![Sanitization Details](assets/sanitization_details.png) | ![Direct Attack Blocked](assets/direct_attack.png) |
 
 ---
+<img width="1893" height="1022" alt="Screenshot 2026-05-26 222238" src="https://github.com/user-attachments/assets/295258fa-0b32-4af6-b63f-cdfcff258db5" />
+---
+<img width="1884" height="1027" alt="Screenshot 2026-05-26 222333" src="https://github.com/user-attachments/assets/dbc57814-b0c0-4f20-9a0f-1ef4f920f058" />
+---
+<img width="1897" height="913" alt="Screenshot 2026-05-26 222132" src="https://github.com/user-attachments/assets/d43dc9bb-2810-4159-89ff-0b4d6da5b43b" />
+
+---
 
 ## Key Features 
 
- ** Hack Detection**: Catches direct hacks (explicit commands) and indirect hacks (hidden in text).
- ** Risk Scoring**: Scores every prompt from `0` (totally safe) to `10` (danger level red).
- ** Automated Cleaning**: Strips out bad sentences and replaces them with safety placeholders.
- ** Threat Radar**: A beautiful dark-mode SOC dashboard to see security traces in real-time.
+* **Hack Detection**: Catches direct hacks (explicit commands) and indirect hacks (hidden in text).
+* **Risk Scoring**: Scores every prompt from `0` (totally safe) to `10` (danger level red).
+* **Automated Cleaning**: Strips out bad sentences and replaces them with safety placeholders.
+* **Threat Radar**: A beautiful dark-mode SOC dashboard to see security traces in real-time.
 
 ---
 
